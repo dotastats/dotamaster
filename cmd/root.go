@@ -64,7 +64,7 @@ func init() {
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
 	pflags := rootCmd.PersistentFlags()
-	pflags.StringVar(&rootConfigFile, "rootConfig", "", "root config file, could be overrided (default is $GOPATH/src/dotastats/config/config.yaml)")
+	pflags.StringVar(&rootConfigFile, "rootConfig", "", "root config file, could be overrided (default is $GOPATH/src/dotamaster/config/config.yaml)")
 	pflags.StringVar(&customConfigFile, "config", "config/config.yaml", "custom config file")
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
@@ -93,7 +93,7 @@ func initRootConfig() {
 			panic("$GOPATH is not set")
 		}
 		for _, goPath := range goPaths {
-			configDir := filepath.Join(goPath, "src", "dotastats", "config")
+			configDir := filepath.Join(goPath, "src", "dotamaster", "config")
 			rootViper.AddConfigPath(configDir)
 		}
 		rootViper.SetConfigName("config")

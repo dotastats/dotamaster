@@ -1,8 +1,8 @@
 package infra
 
 import (
+	"dotamaster/config"
 	"fmt"
-	"master/config"
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/lib/pq"

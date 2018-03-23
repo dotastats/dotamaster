@@ -1,7 +1,7 @@
 package config
 
 import (
-	"master/cmd"
+	"dotamaster/cmd"
 	"sync"
 )
 
@@ -48,7 +48,7 @@ func load() {
 	})
 }
 
-func Load() {
+func Load() Config {
 	load()
 	return conf
 }

@@ -1,11 +1,4 @@
-# see master/config/config.yaml for more option
-
-app:
-  host: 0.0.0.0
-  port: 5002
-  debug: true
-  whitelist:
-      - "http://localhost:5002"
+# see dotamaster/config/config.yaml for more option
 
 postgresql:
   host        : 127.0.0.1
@@ -17,9 +10,4 @@ postgresql:
   maxIdleConns: 10
   maxOpenConns: 100
 
-
-log:
-  prefix    : "dotastats"
-  dir       : /home/justin/workspace/src/dotastats/log
-  levelDebug: true
 

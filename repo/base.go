@@ -1,8 +1,8 @@
 package repo
 
 import (
+	"dotamaster/infra"
 	"errors"
-	"master/infra"
 )
 
 type base struct{}
