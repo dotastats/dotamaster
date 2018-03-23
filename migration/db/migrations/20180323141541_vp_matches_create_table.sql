@@ -4,6 +4,7 @@
 
 CREATE TABLE vp_matches (
 	id SERIAL PRIMARY KEY,
+	match_id INTEGER,
 	series_id TEXT,
 	team_a_id TEXT,
 	team_b_id TEXT,
@@ -21,13 +22,12 @@ CREATE TABLE vp_matches (
 	url TEXT,
 	time TIMESTAMP WITH TIME ZONE,
 	match_name TEXT,
-	match_type TEXT,
 	mode_name TEXT,
 	mode_desc TEXT,
 	handicap_amount TEXT,
 	handicap_team TEXT,
-	ratio_a TEXT,
-	ratio_b TEXT,
+	ratio_a FLOAT,
+	ratio_b FLOAT,
 	winner TEXT,
 	status TEXT,
 	score_a FLOAT,

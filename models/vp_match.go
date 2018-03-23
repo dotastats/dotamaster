@@ -17,11 +17,10 @@ type VpMatch struct {
 	Game           string
 	BestOf         string
 	// sub match specific
-	MatchID        string
+	MatchID        int
 	URL            string
 	Time           *time.Time
 	MatchName      string
-	MatchType      []string
 	ModeName       string
 	ModeDesc       string
 	HandicapAmount string
