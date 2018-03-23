@@ -11,22 +11,7 @@ var (
 )
 
 type Config struct {
-	App        App
 	PostgreSQL PostgreSQL
-	Log        Log
-}
-
-type App struct {
-	Host      string
-	Port      int
-	Debug     bool
-	Whitelist []string
-}
-
-type Log struct {
-	Prefix     string
-	Dir        string
-	LevelDebug bool
 }
 
 type PostgreSQL struct {

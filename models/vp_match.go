@@ -2,7 +2,7 @@ package models
 
 import "time"
 
-type VPMatch struct {
+type VpMatch struct {
 	Id             int
 	TeamAID        string
 	TeamBID        string
