@@ -4,6 +4,8 @@ import "time"
 
 type VpMatch struct {
 	Id             int
+	SeriesID       int
+	MatchID        int
 	TeamAID        string
 	TeamBID        string
 	TeamA          string
@@ -17,7 +19,6 @@ type VpMatch struct {
 	Game           string
 	BestOf         string
 	// sub match specific
-	MatchID        int
 	URL            string
 	Time           *time.Time
 	MatchName      string
@@ -32,5 +33,4 @@ type VpMatch struct {
 	ScoreA         float64
 	ScoreB         float64
 	Note           string
-	SeriesID       string
 }

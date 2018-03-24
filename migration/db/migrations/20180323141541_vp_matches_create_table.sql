@@ -5,7 +5,7 @@
 CREATE TABLE vp_matches (
 	id SERIAL PRIMARY KEY,
 	match_id INTEGER,
-	series_id TEXT,
+	series_id INTEGER,
 	team_a_id TEXT,
 	team_b_id TEXT,
 	team_a TEXT,

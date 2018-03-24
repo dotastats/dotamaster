@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"dotamaster/utilities/ulog"
+	"dotamaster/utils/ulog"
 	"time"
 
 	"github.com/gin-gonic/gin"
